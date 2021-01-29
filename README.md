@@ -1,6 +1,6 @@
 # app_turismo
 
-A new Flutter project.
+Projeto de app turismo que usei ano passado para praticar. Não finalizado
 
 ## Getting Started
 
