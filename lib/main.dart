@@ -1,5 +1,27 @@
+import 'package:app_turismo/style.dart';
 import 'package:flutter/material.dart';
-import 'app.dart';
+import './home/homePage.dart';
 
 void main() => runApp(MyApp());
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'APP Turismo',
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          textTheme: TextTheme(title: AppBarTextStyle),
+        ),
+        textTheme: TextTheme(
+          headline1: TitleTextStyle,
+          bodyText1: Body1TextStyle,
+          headline2: TileTextStyle,
+          bodyText2: TileBodyTextStyle,
+        ),
+      ),
+      home: HomePage(),
+    );
+  }
+}
