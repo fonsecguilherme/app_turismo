@@ -7,7 +7,7 @@
 ---
 
 ## Contribuição
-* Para esse trabalho tive a ajuda do meu amigo [Antonio Lopes](https://www.instagram.com/tomlrf/) que fez o esboço das telas para o app
+* Para esse trabalho tive a ajuda do meu amigo [Antonio Lopes](https://www.instagram.com/tomlrf/) que fez o esboço das [telas](https://xd.adobe.com/view/4eac6f81-1311-456f-745f-f0a5ce3a4fc5-389d/) para o app
 ---
 
 ### Objetivo
