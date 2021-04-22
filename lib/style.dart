@@ -23,15 +23,8 @@ const AppBarTextStyle2 = TextStyle(
 
 const TitleTextStyle = TextStyle(
   fontFamily: FontNameDefault,
-  fontWeight: FontWeight.w600,
+  fontWeight: FontWeight.w700,
   fontSize: largeTextSize,
-  color: Colors.black,
-);
-
-const Body1TextStyle = TextStyle(
-  fontFamily: FontNameDefault,
-  fontWeight: FontWeight.w300,
-  fontSize: mediumTextSize,
   color: Colors.black,
 );
 
@@ -42,11 +35,16 @@ const TileTextStyle = TextStyle(
   color: Colors.white,
 );
 
-const TileBodyTextStyle = TextStyle(
+const Body1TextStyle = TextStyle(
   fontFamily: FontNameDefault,
-  fontWeight: FontWeight.w600,
+  fontWeight: FontWeight.w300,
   fontSize: mediumTextSize,
   color: Colors.black,
 );
 
-
+const TileBodyTextStyle = TextStyle(
+  fontFamily: FontNameDefault,
+  fontWeight: FontWeight.w300,
+  fontSize: mediumTextSize,
+  color: Colors.black,
+);

@@ -1,5 +1,6 @@
 import 'package:app_turismo/screens/homePage/home_Page.dart';
 import 'package:flutter/material.dart';
+import 'package:app_turismo/style.dart';
 
 class CityDetail extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class CityDetail extends StatelessWidget {
             floating: true,
             pinned: true,
             snap: true,
-            expandedHeight: 200,
+            expandedHeight: 350,
             elevation: 0,
             centerTitle: true,
             flexibleSpace: FlexibleSpaceBar(
@@ -38,10 +39,27 @@ class CityDetail extends StatelessWidget {
               },
             ),
           ),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-                (context, index) => ListTile(title: Text('Item $index')),
-                childCount: 25),
+          SliverFixedExtentList(
+            itemExtent: 200,
+            delegate: SliverChildListDelegate([
+              Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Maceió',
+                        style: Theme.of(context).textTheme.headline1,
+                      ),
+                      Expanded(
+                        child: Text(
+                          'When passing layout constraints to its child, padding shrinks the constraints by the given padding, causing the child to layout at a smaller size. Padding then sizes itself to its childs size, inflated by the padding, effectively creating empty space around the child.',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                      ),
+                    ],
+                  )),
+            ]),
           ),
         ],
       ),
