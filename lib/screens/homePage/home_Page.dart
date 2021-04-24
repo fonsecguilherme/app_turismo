@@ -34,7 +34,11 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => CityDetail())); //dá pra passar referencia da cidade por aqui
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                CityDetail())); //dá pra passar referencia da cidade por aqui
                   },
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 20),
