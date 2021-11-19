@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
       title: 'APP Turismo',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          textTheme: TextTheme(title: AppBarTextStyle),
+          //titleTextStyle: TextStyle(fontStyle: AppBarTextStyle),
+          textTheme: TextTheme(headline1: AppBarTextStyle),
         ),
         textTheme: TextTheme(
           headline1: TitleTextStyle,
