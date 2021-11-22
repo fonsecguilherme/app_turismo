@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:app_turismo/screens/city_detail/city_detail.dart';
+import 'package:app_turismo/screens/city_detail.dart';
 import 'package:flutter/material.dart';
 //import '../style.dart';
 

@@ -1,6 +1,6 @@
 import 'package:app_turismo/style.dart';
 import 'package:flutter/material.dart';
-import './screens/homePage/home_Page.dart';
+import 'screens/home_Page.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,8 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'APP Turismo',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          //titleTextStyle: TextStyle(fontStyle: AppBarTextStyle),
-          textTheme: TextTheme(headline1: AppBarTextStyle),
+          titleTextStyle: AppBarTextStyle,
         ),
         textTheme: TextTheme(
           headline1: TitleTextStyle,
