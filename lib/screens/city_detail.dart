@@ -2,7 +2,7 @@ import 'package:app_turismo/models/city.dart';
 import 'package:app_turismo/screens/home_Page.dart';
 import 'package:app_turismo/screens/text_section.dart';
 import 'package:flutter/material.dart';
-//import 'package:app_turismo/style.dart';
+import 'package:app_turismo/screens/photo_slide.dart';
 
 class CityDetail extends StatelessWidget {
   @override
@@ -48,11 +48,18 @@ class CityDetail extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(20, 14, 20, 14),
               child: SingleChildScrollView(
                 child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: []..addAll(textSections(location))),
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: []
+                    ..addAll(
+                      textSections(location),
+                    )
+                    ..addAll(
+                      photosSlide(location),
+                    ),
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -62,5 +69,9 @@ class CityDetail extends StatelessWidget {
     return city.facts
         .map((fact) => TextSection(fact.title, fact.fact))
         .toList();
+  }
+
+  List<Widget> photosSlide(City city) {
+    return city.photos.map((photo) => PhotoSlide(photo)).toList();
   }
 }

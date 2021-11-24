@@ -13,7 +13,11 @@ class TextSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Container(
-            child: Text(_title, style: Theme.of(context).textTheme.headline1)),
+          child: Text(
+            _title,
+            style: Theme.of(context).textTheme.headline1,
+          ),
+        ),
         Container(
           child: Text(
             _body,
