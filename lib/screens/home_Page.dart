@@ -1,19 +1,24 @@
 import 'dart:ui';
 
+import 'package:app_turismo/models/city.dart';
 import 'package:app_turismo/screens/city_detail.dart';
 import 'package:flutter/material.dart';
 //import '../style.dart';
 
 class HomePage extends StatelessWidget {
   final double _cHeight = 340;
+  final String _appName = 'turismo.co';
+  final locations = City.fetchAll();
+
   @override
   Widget build(BuildContext context) {
+    final location = locations.first;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
         title: Text(
-          'turismo.co',
+          _appName,
           style: TextStyle(),
         ),
         backgroundColor: Colors.white,
@@ -31,6 +36,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Stack(
+              //widget retangulo foto
               children: <Widget>[
                 GestureDetector(
                   onTap: () {
@@ -48,7 +54,7 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12.0),
                       image: DecorationImage(
                         fit: BoxFit.fitHeight,
-                        image: AssetImage('assets/images/maceio4.jpeg'),
+                        image: AssetImage(location.photos[3]),
                       ),
                     ),
                     child: Column(
@@ -64,6 +70,7 @@ class HomePage extends StatelessWidget {
                                   filter: ImageFilter.blur(
                                       sigmaX: 5.0, sigmaY: 5.0),
                                   child: Container(
+                                    // efeito de vidro
                                     height: 91.0,
                                     decoration: BoxDecoration(
                                       color:
@@ -78,12 +85,12 @@ class HomePage extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Text('Sol e mar',
+                                  Text(location.facts[3].title,
                                       style: Theme.of(context)
                                           .textTheme
                                           .headline2),
                                   Text(
-                                    'conheça o verde azul das piscinas naturais mais bonitas do nordeste',
+                                    location.facts[3].fact,
                                     style:
                                         Theme.of(context).textTheme.bodyText2,
                                   ),

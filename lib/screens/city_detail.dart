@@ -21,7 +21,7 @@ class CityDetail extends StatelessWidget {
             centerTitle: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/maceio5.jpg',
+                location.photos[4],
                 fit: BoxFit.cover,
               ),
             ),
@@ -49,13 +49,28 @@ class CityDetail extends StatelessWidget {
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: []
-                    ..addAll(
-                      textSections(location),
-                    )
-                    ..addAll(
-                      photosSlide(location),
+                  children: [
+                    TextSection(
+                        location.facts[0].title, location.facts[0].fact),
+                    TextSection(
+                        location.facts[1].title, location.facts[1].fact),
+                    TextSection(
+                      location.facts[2].title,
+                      location.facts[2].fact,
                     ),
+                    Text(
+                      'Mais em ${location.name}: ',
+                      style: Theme.of(context).textTheme.headline1,
+                    ),
+                    SizedBox(height: 3),
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          PhotoSlide(location.photos[0]),
+                          PhotoSlide(location.photos[1]),
+                          PhotoSlide(location.photos[2]),
+                        ]),
+                  ],
                 ),
               ),
             ),
