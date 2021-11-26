@@ -4,9 +4,8 @@ class TextSection extends StatelessWidget {
   final String _title;
   final String _body;
   String image;
-  Widget photoWidget;
 
-  TextSection(this._title, this._body, {this.image});
+  TextSection(this._title, this._body, {this.image = ""});
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +20,7 @@ class TextSection extends StatelessWidget {
               _title,
               style: Theme.of(context).textTheme.headline1,
             ),
+            //!queria chamar a imagem opicional aqui no meio
           ),
           Container(
             child: Text(

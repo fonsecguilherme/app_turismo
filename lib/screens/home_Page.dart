@@ -29,9 +29,10 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
+              //Texto acima do banner
               margin: EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                'maceió minha sereia',
+                '${location.name} minha sereia',
                 style: Theme.of(context).textTheme.headline1,
               ),
             ),
@@ -96,7 +97,7 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ],

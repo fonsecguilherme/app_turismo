@@ -1,6 +1,7 @@
 import 'package:app_turismo/models/city.dart';
 import 'package:app_turismo/screens/home_Page.dart';
 import 'package:app_turismo/screens/text_section.dart';
+import 'package:app_turismo/widgets/photo_banner.dart';
 import 'package:flutter/material.dart';
 import 'package:app_turismo/screens/photo_slide.dart';
 
@@ -57,7 +58,10 @@ class CityDetail extends StatelessWidget {
                     TextSection(
                       location.facts[2].title,
                       location.facts[2].fact,
+                      image: location.photos[6],
                     ),
+                    PhotoBanner(image: location.photos[6]),
+                    Divider(height: 25),
                     Text(
                       'Mais em ${location.name}: ',
                       style: Theme.of(context).textTheme.headline1,
@@ -67,7 +71,7 @@ class CityDetail extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           PhotoSlide(location.photos[0]),
-                          PhotoSlide(location.photos[1]),
+                          PhotoSlide(location.photos[5]),
                           PhotoSlide(location.photos[2]),
                         ]),
                   ],
