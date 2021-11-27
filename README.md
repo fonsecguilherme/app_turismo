@@ -25,3 +25,6 @@
 
 # Objetivo
 * O app vai consistir em cidades (no momento só Maceió) e quando selecionada, vai apresentar alguns fatos sobre a cidade 
+---
+#### Telas
+
