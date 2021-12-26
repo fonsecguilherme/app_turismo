@@ -67,13 +67,17 @@ class CityDetail extends StatelessWidget {
                       style: Theme.of(context).textTheme.headline1,
                     ),
                     SizedBox(height: 3),
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        //mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           PhotoSlide(location.photos[0]),
                           PhotoSlide(location.photos[5]),
                           PhotoSlide(location.photos[2]),
-                        ]),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
