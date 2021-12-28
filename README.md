@@ -14,11 +14,19 @@
 
 # Telas
 > Screenshots do código que está disponível atualmente:
-> 
- * [Tela de Início](https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot1.png)
-> Detalhes da cidade:
-> 
- * [1](https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot2.png), [2](https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot3.png), [3](https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot4.png),  [4](https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot5.png)
+ * Tela de Início
+<p float="left">
+  <img src="https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot1.png" width="350" />
+</p>
+
+ * Detalhes da cidade:
+<p float="left">
+  <img src="https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot2.png" width="350" />
+  <img src="https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot3.png" width="350" />
+  <img src="https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot4.png" width="350" />
+  <img src="https://github.com/fonsecguilherme/app_turismo/blob/master/assets/screenshots/Screenshot5.png" width="350" />
+</p>
+
 
 ---
 
